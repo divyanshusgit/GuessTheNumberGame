@@ -21,7 +21,6 @@ body {
     width: 600px;
     height: 600px;
     padding: 10px;
-    border: 2px solid white;
     min-width: 240px;
 }
 
@@ -93,7 +92,7 @@ input::-webkit-inner-spin-button {
     font-weight: 900;
     width: 200px;
     color: white;
-    box-shadow: 5px 5px rgb(0, 82, 224);
+    box-shadow: 6px 6px rgb(0, 82, 224);
 }
 
 #check:hover {
@@ -108,7 +107,7 @@ input::-webkit-inner-spin-button {
     font-weight: 900;
     font-size: 33px;
     color: white;
-    box-shadow: 5px 5px rgb(98, 179, 225);
+    box-shadow: 6px 6px rgb(0, 144, 227);
 }
 
 #instructions{
