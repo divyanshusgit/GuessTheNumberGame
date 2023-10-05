@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    background-color: rgb(0, 183, 255);
+}
+
+*{
+    color: white;
+    font-weight: 900;
+    text-shadow: 1px 1px black;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    /* border: 2px solid white; */
+    min-width: 200px;
+    min-height: 200px;
+}
+
+.items {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 80%;
+    margin: 15px 0px;
+}
+
+#chances {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+#chance-text {
+    width: 220px;
+    text-align: center;
+    font-weight: 900;
+}
+
+#color-pallete {
+    display: flex;
+}
+
+.colors {
+    margin: 0px 10px;
+    width: 50px;
+    outline: 2px solid white;
+    outline-offset: 3px;
+    border-radius: 0px;
+}
+
+#color1 {
+    background-color: #ff0000;
+}
+
+#color2 {
+    background-color: #ffa500;
+}
+
+#color3 {
+    background-color: #ffff00;
+}
+
+#color4 {
+    background-color: #dfff00;
+}
+
+#color5 {
+    background-color: #00ff00;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#message {
+    visibility: hidden;
+}
+
+#check {
+    border: none;
+    background-color: rgb(0, 130, 251);
+    font-weight: 900;
+    width: 200px;
+    color: white;
+    box-shadow: 5px 5px rgb(30, 100, 221);
+}
+
+#check:hover {
+    background-color: rgb(27, 106, 254);
+}
+
+#input {
+    text-shadow: 1px 1px black;
+    border: none;
+    outline: none;
+    background-color: rgb(128, 219, 255)    ;
+    font-weight: 900;
+    font-size: 33px;
+    color: white;
+    box-shadow: 5px 5px rgb(98, 179, 225);
+}
+
+#instructions{
+    font-weight: 900;
+    width: 90%;
+    margin-bottom: 0px;
+}
+
+@media (max-width:680px){
+    #chances{
+        flex-direction: column;
+        align-items: center;
+    }
+    #container{
+        padding: 0px;
+        height: 400px;
+    }
+    /* body{
+        padding: 0px;
+    }
+    .items{
+        margin: 5px;
+    } */
+    .chance-content{
+        margin-top: 10px;
+    }
+    .colors{
+        width: 20px;
+    }
+}
+@media (max-height:660px){
+    body{
+        padding: 0px;
+    }
+    #container{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 500px;
+    }
+}
+@media (max-height:540px){
+    #container{
+        height: 400px;
+    }
+    #body{
+        padding: 0px;
+    }
+    .items{
+        margin: 5px;
+    }
+    #input{
+        padding: 0px;
+    }
+    #check{
+        padding: 3px;
+    }
+    #message{
+        padding: 3px;
+    }
+}
+
+/* set containers min width */
