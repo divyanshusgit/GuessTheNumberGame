@@ -21,9 +21,8 @@ body {
     width: 600px;
     height: 600px;
     padding: 10px;
-    /* border: 2px solid white; */
-    min-width: 200px;
-    min-height: 200px;
+    border: 2px solid white;
+    min-width: 240px;
 }
 
 .items {
@@ -94,7 +93,7 @@ input::-webkit-inner-spin-button {
     font-weight: 900;
     width: 200px;
     color: white;
-    box-shadow: 5px 5px rgb(30, 100, 221);
+    box-shadow: 5px 5px rgb(0, 82, 224);
 }
 
 #check:hover {
@@ -117,58 +116,22 @@ input::-webkit-inner-spin-button {
     width: 90%;
     margin-bottom: 0px;
 }
-
-@media (max-width:680px){
+@media (max-width:620px){
     #chances{
         flex-direction: column;
         align-items: center;
     }
-    #container{
-        padding: 0px;
-        height: 400px;
-    }
-    /* body{
-        padding: 0px;
-    }
-    .items{
-        margin: 5px;
-    } */
     .chance-content{
-        margin-top: 10px;
+        margin: 10px;
     }
+}
+@media (max-width: 380px){
     .colors{
-        width: 20px;
+        width: 35px;
+    }
+}   
+@media (max-width:300px){
+    .colors{
+        width: 30px;
     }
 }
-@media (max-height:660px){
-    body{
-        padding: 0px;
-    }
-    #container{
-        padding-top: 0px;
-        padding-bottom: 0px;
-        height: 500px;
-    }
-}
-@media (max-height:540px){
-    #container{
-        height: 400px;
-    }
-    #body{
-        padding: 0px;
-    }
-    .items{
-        margin: 5px;
-    }
-    #input{
-        padding: 0px;
-    }
-    #check{
-        padding: 3px;
-    }
-    #message{
-        padding: 3px;
-    }
-}
-
-/* set containers min width */

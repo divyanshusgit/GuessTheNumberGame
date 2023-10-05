@@ -1,4 +1,4 @@
-let winSound = new Audio('won.mp3');
+let winSound = new Audio('win.mp3');
 let lostSound = new Audio('gameOver.mp3');
 
 let a = 0;
@@ -40,9 +40,6 @@ function submitFunc() {
     chanceContent.innerText = `${5 - counter} chances left`; 
     if (counter == 5 && parseInt(input.value) != ran) { 
         lostSound.play(); 
-        setTimeout(function () {
-            lostSound.pause(); 
-        }, 400);
         message.setAttribute('style', 'background-color: red; text-shadow: 2px 2px darkred;'); 
         message.innerHTML = `Game Over &#128551`; 
         message.style.visibility = 'visible';
@@ -52,9 +49,6 @@ function submitFunc() {
     else {
         if (parseInt(input.value) == ran) {
             winSound.play(); 
-            setTimeout(function () {
-                winSound.pause(); 
-            }, 1390)
             message.setAttribute('style', 'background-color: lightgreen; text-shadow: 2px 2px green;'); 
             message.innerHTML = `You got it! &#129395;`; 
             message.style.visibility = 'visible';
