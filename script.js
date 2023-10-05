@@ -1,5 +1,5 @@
-let winSound = new Audio('../sounds/won.mp3');
-let lostSound = new Audio('../sounds/gameOver.mp3');
+let winSound = new Audio('won.mp3');
+let lostSound = new Audio('gameOver.mp3');
 
 let a = 0;
 let b = 10;
