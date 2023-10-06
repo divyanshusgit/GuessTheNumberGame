@@ -7,7 +7,7 @@ let ran = (a + 1) + Math.floor((b - (a + 1)) * Math.random());
 
 let input = document.getElementById('input');
 input.addEventListener('keydown', keyDownFunc);
-let allowedStr = '0123456789';
+let allowedStr = '123456789';
 let allowedArr = Array.from(allowedStr);
 function keyDownFunc(a) {
     if (a.key != 'Backspace') {  
