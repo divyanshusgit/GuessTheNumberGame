@@ -93,10 +93,20 @@ input::-webkit-inner-spin-button {
     width: 200px;
     color: white;
     box-shadow: 6px 6px rgb(0, 82, 224);
+    position: relative;
+    top:0px;
+    left:0px;
+    transition: 0.1s all;
 }
 
 #check:hover {
     background-color: rgb(27, 106, 254);
+}
+
+#check:active{
+    box-shadow: none;
+    top: 6px;
+    left: 6px;
 }
 
 #input {
